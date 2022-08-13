@@ -19,6 +19,7 @@ function generateCode() {
 router.post('/new', (req, res, next) => {
   const url = req.body.url;
   const code = generateCode();
+
   res.send('http://localhost/3000/' + code)
 })
 module.exports = router;
