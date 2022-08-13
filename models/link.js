@@ -3,7 +3,7 @@ const database = require('../db');
 
 const Link = database.define('Link', {
     id: {
-        type: Sequelize.INTEGER.UNSIGNED,
+        type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
@@ -17,7 +17,7 @@ const Link = database.define('Link', {
         allowNull: false
     },
     hits: {
-        type: Sequelize.INTEGER.UNSIGNED,
+        type: Sequelize.INTEGER,
         allowNull: true,
         defaultValue: 0
     }
